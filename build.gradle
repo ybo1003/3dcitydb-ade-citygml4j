@@ -23,7 +23,6 @@ dependencies {
 }
 
 javadoc {
-    options.addStringOption('doctitle', project.name + ' - ' + project.version)
     options.addStringOption('Xdoclint:none', '-quiet')
 }
 
