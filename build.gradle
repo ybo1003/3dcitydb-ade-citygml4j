@@ -8,7 +8,7 @@ plugins {
 
 apply from: 'properties.gradle'
 
-group 'org.citydb.ade'
+group 'org.citydb'
 version '1.0.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
