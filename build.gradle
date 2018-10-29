@@ -1,15 +1,12 @@
-import org.apache.tools.ant.filters.ReplaceTokens
-
 plugins {
     id 'java-library'
     id 'maven-publish'
     id 'com.jfrog.bintray' version '1.8.4'
 }
 
-apply from: 'properties.gradle'
-
 group 'org.citydb'
 version '1.0.0-SNAPSHOT'
+description 'citygml4j ADE module for the 3D City Database'
 
 sourceCompatibility = 1.8
 
@@ -25,52 +22,19 @@ dependencies {
     api 'org.citygml4j:citygml4j:2.8.0'
 }
 
-task processLicense(type: Copy) {
-    from("$rootDir/resources/license/LICENSE.txt") {
-        filteringCharset = 'UTF-8'
-        filter(ReplaceTokens, tokens: [
-                name: project.name
-        ])
-    }
-    into "$buildDir/tmp/license"
-}
-
 javadoc {
-    options.overview "$buildDir/tmp/javadoc/overview.html"
     options.addStringOption('doctitle', project.name + ' - ' + project.version)
     options.addStringOption('Xdoclint:none', '-quiet')
-
-    doFirst {
-        copy {
-            from("$rootDir/resources/javadoc/overview.html") {
-                filteringCharset = 'UTF-8'
-                filter(ReplaceTokens, tokens: [
-                        name: project.name,
-                        version: project.version,
-                        citydbName: project.citydbName,
-                        citydbWebsiteUrl: project.citydbWebsiteUrl,
-                        vendorName: project.vendorName,
-                        vendorOrganisation: project.vendorOrganisation,
-                        vendorCountry: project.vendorCountry,
-                        vendorCopyright: project.vendorCopyright,
-                        vendorWebsiteUrl: project.vendorWebsiteUrl
-                ])
-            }
-            into "$buildDir/tmp/javadoc"
-        }
-    }
 }
 
 jar {
     manifest {
         attributes('Implementation-Title': project.name,
-                'Implementation-Version': project.version,
-                'Implementation-Vendor': project.vendorName + ', ' + project.vendorOrganisation
+                'Implementation-Version': project.version
         )
     }
     into('META-INF') {
-        from 'resources/license/APACHE-2.0.txt'
-        from processLicense
+        from 'LICENSE'
     }
 }
 
@@ -92,7 +56,8 @@ publishing {
             artifact javadocJar
             pom {
                 name = project.name
-                url = project.vcsUrl
+                description = project.description
+                url = 'https://github.com/3dcitydb'
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'
@@ -100,9 +65,18 @@ publishing {
                         distribution = 'repo'
                     }
                 }
+                developers {
+                    developer {
+                        id = 'clausnagel'
+                        name = 'Claus Nagel'
+                        email = 'claus.nagel@gmail.com'
+                        roles = ['architect', 'developer']
+                        timezone = '+1'
+                    }
+                }
                 scm {
-                    url = project.vcsUrl
-                    connection = 'scm:git:' + project.git
+                    url = 'https://github.com/3dcitydb/3dcitydb-ade-citygml4j'
+                    connection = 'scm:git:https://github.com/3dcitydb/3dcitydb-ade-citygml4j.git'
                 }
             }
         }
@@ -118,9 +92,10 @@ bintray {
         repo = 'maven'
         userOrg = '3dcitydb'
         name = project.name
-        websiteUrl = project.vcsUrl
-        vcsUrl = project.git
-        issueTrackerUrl = project.issueTrackerUrl
+        desc = project.description
+        websiteUrl = 'https://github.com/3dcitydb'
+        vcsUrl = 'https://github.com/3dcitydb/3dcitydb-ade-citygml4j.git'
+        issueTrackerUrl = 'https://github.com/3dcitydb/3dcitydb-ade-citygml4j/issues'
         licenses = ['Apache-2.0']
         version {
             name = project.version
