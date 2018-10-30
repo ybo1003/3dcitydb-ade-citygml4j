@@ -42,7 +42,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CityDBADEContext implements ADEContext {
-    private final List<ADEModule> modules = Arrays.asList(new CityDBADE100Module(), new CityDBADE200Module());
+    private final List<ADEModule> modules = Arrays.asList(CityDBADE100Module.v3_0, CityDBADE200Module.v3_0);
     private final ADEMarshaller marshaller = new CityDBADEMarshaller();
     private final ADEUnmarshaller unmarshaller = new CityDBADEUnmarshaller();
 

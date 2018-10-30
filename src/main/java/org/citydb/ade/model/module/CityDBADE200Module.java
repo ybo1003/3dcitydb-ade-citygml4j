@@ -38,8 +38,9 @@ import java.net.URL;
 import java.util.Map;
 
 public class CityDBADE200Module extends ADEModule {
+    public static final CityDBADE200Module v3_0 = new CityDBADE200Module();
 
-    public CityDBADE200Module() {
+    private CityDBADE200Module() {
         super("http://www.3dcitydb.org/citygml-ade/3.0/citygml/2.0",
                 "citydb",
                 "http://www.3dcitydb.org/citygml-ade/3.0/3dcitydb-ade-citygml-2.0.xsd",
