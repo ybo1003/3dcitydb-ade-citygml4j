@@ -19,7 +19,7 @@ sourceSets {
 }
 
 dependencies {
-    api 'org.citygml4j:citygml4j:2.8.0'
+    api 'org.citygml4j:citygml4j:2.8.1'
 }
 
 javadoc {
