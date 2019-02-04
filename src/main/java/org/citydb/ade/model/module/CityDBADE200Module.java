@@ -35,6 +35,8 @@ import org.citygml4j.model.module.citygml.CityGMLVersion;
 
 import javax.xml.namespace.QName;
 import java.net.URL;
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 public class CityDBADE200Module extends ADEModule {
@@ -50,6 +52,11 @@ public class CityDBADE200Module extends ADEModule {
     @Override
     public URL getSchemaResource() {
         return CityDBADEContext.class.getResource("/org/citydb/ade/schema/3dcitydb-ade-citygml-2.0.xsd");
+    }
+
+    @Override
+    public List<String> getJAXBPackageNames() {
+        return Collections.singletonList("org.citydb.ade._3._2");
     }
 
     @Override

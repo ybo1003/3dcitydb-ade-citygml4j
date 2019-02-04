@@ -43,8 +43,6 @@ import java.util.List;
 
 public class CityDBADEContext implements ADEContext {
     private final List<ADEModule> modules = Arrays.asList(CityDBADE100Module.v3_0, CityDBADE200Module.v3_0);
-    private final ADEMarshaller marshaller = new CityDBADEMarshaller();
-    private final ADEUnmarshaller unmarshaller = new CityDBADEUnmarshaller();
 
     @Override
     public List<ADEModule> getADEModules() {
@@ -57,17 +55,12 @@ public class CityDBADEContext implements ADEContext {
     }
 
     @Override
-    public List<String> getJAXBPackageNames() {
-        return Arrays.asList("org.citydb.ade._3._1", "org.citydb.ade._3._2");
+    public ADEMarshaller createADEMarshaller() {
+        return new CityDBADEMarshaller();
     }
 
     @Override
-    public ADEMarshaller getADEMarshaller() {
-        return marshaller;
-    }
-
-    @Override
-    public ADEUnmarshaller getADEUnmarshaller() {
-        return unmarshaller;
+    public ADEUnmarshaller createADEUnmarshaller() {
+        return new CityDBADEUnmarshaller();
     }
 }
