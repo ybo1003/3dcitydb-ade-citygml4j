@@ -1,8 +1,8 @@
 //
-// Generated with ade-xjc - XML Schema binding compiler for CityGML ADEs, version 2.8.0
+// Generated with ade-xjc - XML Schema binding compiler for CityGML ADEs, version 2.9.0
 // ade-xjc is part of the citygml4j project, see https://github.com/citygml4j
 // Any modifications to this file will be lost upon recompilation of the source
-// Generated: Mon Oct 29 21:11:14 CET 2018
+// Generated: Mon Feb 04 14:55:57 CET 2019
 //
 
 
@@ -32,17 +32,17 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ZipCode_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "zipCode");
-    private final static QName _ReasonForUpdate_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "reasonForUpdate");
-    private final static QName _Country_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "country");
-    private final static QName _HouseNumber_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "houseNumber");
-    private final static QName _Lineage_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "lineage");
-    private final static QName _PoBox_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "poBox");
     private final static QName _LastModificationDate_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "lastModificationDate");
-    private final static QName _Street_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "street");
-    private final static QName _State_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "state");
-    private final static QName _City_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "city");
     private final static QName _UpdatingPerson_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "updatingPerson");
+    private final static QName _ReasonForUpdate_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "reasonForUpdate");
+    private final static QName _Lineage_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "lineage");
+    private final static QName _Street_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "street");
+    private final static QName _HouseNumber_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "houseNumber");
+    private final static QName _PoBox_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "poBox");
+    private final static QName _ZipCode_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "zipCode");
+    private final static QName _City_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "city");
+    private final static QName _State_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "state");
+    private final static QName _Country_QNAME = new QName("http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", "country");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.citydb.ade._3._1
@@ -52,62 +52,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      * 
-     */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "zipCode", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
-    public JAXBElement<String> createZipCode(String value) {
-        return new JAXBElement<String>(_ZipCode_QNAME, String.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "reasonForUpdate", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
-    public JAXBElement<String> createReasonForUpdate(String value) {
-        return new JAXBElement<String>(_ReasonForUpdate_QNAME, String.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "country", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
-    public JAXBElement<String> createCountry(String value) {
-        return new JAXBElement<String>(_Country_QNAME, String.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "houseNumber", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
-    public JAXBElement<String> createHouseNumber(String value) {
-        return new JAXBElement<String>(_HouseNumber_QNAME, String.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "lineage", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
-    public JAXBElement<String> createLineage(String value) {
-        return new JAXBElement<String>(_Lineage_QNAME, String.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "poBox", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
-    public JAXBElement<String> createPoBox(String value) {
-        return new JAXBElement<String>(_PoBox_QNAME, String.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
-     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "lastModificationDate", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
     public JAXBElement<XMLGregorianCalendar> createLastModificationDate(XMLGregorianCalendar value) {
@@ -115,8 +65,51 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "updatingPerson", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
+    public JAXBElement<String> createUpdatingPerson(String value) {
+        return new JAXBElement<String>(_UpdatingPerson_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "reasonForUpdate", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
+    public JAXBElement<String> createReasonForUpdate(String value) {
+        return new JAXBElement<String>(_ReasonForUpdate_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "lineage", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
+    public JAXBElement<String> createLineage(String value) {
+        return new JAXBElement<String>(_Lineage_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "street", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
     public JAXBElement<String> createStreet(String value) {
@@ -124,17 +117,51 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "state", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
-    public JAXBElement<String> createState(String value) {
-        return new JAXBElement<String>(_State_QNAME, String.class, null, value);
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "houseNumber", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
+    public JAXBElement<String> createHouseNumber(String value) {
+        return new JAXBElement<String>(_HouseNumber_QNAME, String.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "poBox", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
+    public JAXBElement<String> createPoBox(String value) {
+        return new JAXBElement<String>(_PoBox_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "zipCode", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
+    public JAXBElement<String> createZipCode(String value) {
+        return new JAXBElement<String>(_ZipCode_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "city", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
     public JAXBElement<String> createCity(String value) {
@@ -142,12 +169,29 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      */
-    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "updatingPerson", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfCityObject")
-    public JAXBElement<String> createUpdatingPerson(String value) {
-        return new JAXBElement<String>(_UpdatingPerson_QNAME, String.class, null, value);
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "state", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
+    public JAXBElement<String> createState(String value) {
+        return new JAXBElement<String>(_State_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.3dcitydb.org/citygml-ade/3.0/citygml/1.0", name = "country", substitutionHeadNamespace = "http://www.opengis.net/citygml/1.0", substitutionHeadName = "_GenericApplicationPropertyOfAddress")
+    public JAXBElement<String> createCountry(String value) {
+        return new JAXBElement<String>(_Country_QNAME, String.class, null, value);
     }
 
 }
