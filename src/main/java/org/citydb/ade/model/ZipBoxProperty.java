@@ -31,7 +31,7 @@ package org.citydb.ade.model;
 import org.citygml4j.builder.copy.CopyBuilder;
 import org.citygml4j.model.citygml.ade.binding.ADEGenericApplicationProperty;
 
-public class ZipBoxProperty extends ADEGenericApplicationProperty<String> {
+public class ZipBoxProperty extends ADEGenericApplicationProperty<String> implements CityDBADEModuleComponent {
 
     private ZipBoxProperty() {
     }

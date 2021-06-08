@@ -33,7 +33,7 @@ import org.citygml4j.model.citygml.ade.binding.ADEGenericApplicationProperty;
 
 import java.time.ZonedDateTime;
 
-public class LastModificationDateProperty extends ADEGenericApplicationProperty<ZonedDateTime> {
+public class LastModificationDateProperty extends ADEGenericApplicationProperty<ZonedDateTime> implements CityDBADEModuleComponent {
 
     private LastModificationDateProperty() {
     }
