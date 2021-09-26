@@ -28,17 +28,7 @@
 
 package org.citydb.ade.bind;
 
-import org.citydb.ade.model.CityProperty;
-import org.citydb.ade.model.CountryProperty;
-import org.citydb.ade.model.HouseNumberProperty;
-import org.citydb.ade.model.LastModificationDateProperty;
-import org.citydb.ade.model.LineageProperty;
-import org.citydb.ade.model.PoBoxProperty;
-import org.citydb.ade.model.ReasonForUpdateProperty;
-import org.citydb.ade.model.StateProperty;
-import org.citydb.ade.model.StreetProperty;
-import org.citydb.ade.model.UpdatingPersonProperty;
-import org.citydb.ade.model.ZipBoxProperty;
+import org.citydb.ade.model.*;
 import org.citygml4j.builder.jaxb.unmarshal.citygml.ade.ADEUnmarshallerHelper;
 import org.citygml4j.model.citygml.ade.binding.ADEModelObject;
 import org.citygml4j.model.citygml.ade.binding.ADEUnmarshaller;

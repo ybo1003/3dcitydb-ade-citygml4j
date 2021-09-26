@@ -29,17 +29,7 @@
 package org.citydb.ade.bind.marshal;
 
 import org.citydb.ade._3._1.ObjectFactory;
-import org.citydb.ade.model.CityProperty;
-import org.citydb.ade.model.CountryProperty;
-import org.citydb.ade.model.HouseNumberProperty;
-import org.citydb.ade.model.LastModificationDateProperty;
-import org.citydb.ade.model.LineageProperty;
-import org.citydb.ade.model.PoBoxProperty;
-import org.citydb.ade.model.ReasonForUpdateProperty;
-import org.citydb.ade.model.StateProperty;
-import org.citydb.ade.model.StreetProperty;
-import org.citydb.ade.model.UpdatingPersonProperty;
-import org.citydb.ade.model.ZipBoxProperty;
+import org.citydb.ade.model.*;
 import org.citygml4j.builder.jaxb.marshal.citygml.ade.ADEMarshallerHelper;
 import org.citygml4j.model.citygml.ade.binding.ADEMarshaller;
 import org.citygml4j.model.citygml.ade.binding.ADEModelObject;
