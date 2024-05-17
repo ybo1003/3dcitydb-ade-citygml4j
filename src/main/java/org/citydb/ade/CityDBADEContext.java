@@ -32,11 +32,6 @@ import org.citydb.ade.bind.CityDBADEMarshaller;
 import org.citydb.ade.bind.CityDBADEUnmarshaller;
 import org.citydb.ade.model.module.CityDBADE100Module;
 import org.citydb.ade.model.module.CityDBADE200Module;
-import org.citygml4j.model.citygml.ade.binding.ADEContext;
-import org.citygml4j.model.citygml.ade.binding.ADEMarshaller;
-import org.citygml4j.model.citygml.ade.binding.ADEUnmarshaller;
-import org.citygml4j.model.module.ade.ADEModule;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
